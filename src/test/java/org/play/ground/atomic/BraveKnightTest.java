@@ -2,6 +2,7 @@ package org.play.ground.atomic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.play.ground.atomic.config.KnightConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
