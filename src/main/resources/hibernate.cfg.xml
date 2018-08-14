@@ -23,10 +23,13 @@
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.current_session_context_class">thread</property>
 
+		<!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+
 		<!-- Mapping class -->
 		<!--<mapping class="org.play.ground.atomic.data.Student"></mapping>-->
 		<mapping class="org.play.ground.atomic.data.Employee" />
-
+		<!--<mapping class="org.play.ground.atomic.data.Publication" />-->
+		<mapping class="org.play.ground.atomic.data.Book" />
 
 
 		<!-- Drop and re-create the database schema on startup
