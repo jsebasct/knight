@@ -1,18 +1,9 @@
 package org.play.ground.atomic;
 
-import java.util.Iterator;
-import java.util.List;
-
-import javax.persistence.criteria.CriteriaQuery;
-
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.play.ground.atomic.data.Book;
-import org.play.ground.atomic.data.Employee;
-import org.play.ground.atomic.data.HibernateUtil;
-import org.play.ground.atomic.data.Publication;
+import org.play.ground.atomic.data.*;
 
 /**
  * Hello world!
@@ -35,8 +26,9 @@ public class App
     }
 
     private void insertPublication() {
-        Book warAndPeace = new Book(1, "War And Peace", 100);
-        Book aMockingbird = new Book(1, "Killing A Mockingbird", 200);
+        Publication warAndPeace = new Book(1, "War And Peace", 100);
+        Publication aMockingbird = new Book(1, "Killing A Mockingbird", 200);
+        BlogPost blogPost = new BlogPost(1, "How to start a blog", "http://foo.blog");
 
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
@@ -44,6 +36,7 @@ public class App
         Transaction tx = session.beginTransaction();
         session.save(warAndPeace);
         session.save(aMockingbird);
+        session.save(blogPost);
         tx.commit();
     }
 

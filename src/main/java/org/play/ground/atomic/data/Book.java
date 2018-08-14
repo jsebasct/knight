@@ -1,18 +1,16 @@
 package org.play.ground.atomic.data;
 
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
-@DiscriminatorValue("Book")
+@DiscriminatorValue("BOOK")
+@SecondaryTable(name = "book", pkJoinColumns = @PrimaryKeyJoinColumn(name = "publication_id"))
 public class Book extends Publication {
 
     @Column(name = "num_pages")
     private int numPages;
 
     public Book() {
-
     }
 
     public Book(int numPages) {
@@ -20,7 +18,7 @@ public class Book extends Publication {
     }
 
     public Book(int version, String title, int numPages) {
-        super(version, title);
+        super(version, title, PublicationType.BOOK);
         this.numPages = numPages;
     }
 

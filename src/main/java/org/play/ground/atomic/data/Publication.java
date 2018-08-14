@@ -5,25 +5,29 @@ import javax.persistence.*;
 @Entity
 @Table(name = "publication")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
 public abstract class Publication {
 
-    @Id
-    @Column(name = "publication_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private int version;
 
     private String title;
 
+    private PublicationType type;
+
     public Publication() {
     }
 
-    public Publication(int version, String title) {
+    public Publication(int version, String title, PublicationType type) {
         this.version = version;
         this.title = title;
+        this.type = type;
     }
 
+    @Id
+    @Column(name = "publication_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -46,5 +50,14 @@ public abstract class Publication {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    @Transient
+    public PublicationType getType() {
+        return type;
+    }
+
+    public void setType(PublicationType type) {
+        this.type = type;
     }
 }
