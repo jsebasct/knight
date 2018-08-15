@@ -4,6 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.play.ground.atomic.data.*;
+import org.play.ground.atomic.data.pub.BlogPost;
+import org.play.ground.atomic.data.pub.Book;
+import org.play.ground.atomic.data.pub.Publication;
 
 /**
  * Hello world!

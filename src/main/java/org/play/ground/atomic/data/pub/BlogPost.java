@@ -1,4 +1,7 @@
-package org.play.ground.atomic.data;
+package org.play.ground.atomic.data.pub;
+
+import org.play.ground.atomic.data.PublicationType;
+import org.play.ground.atomic.data.pub.Publication;
 
 import javax.persistence.*;
 

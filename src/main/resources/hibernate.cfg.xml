@@ -12,8 +12,8 @@
 		<property name="hibernate.connection.username">root</property>
 
 		<!-- The database password -->
-		<!--<property name="hibernate.connection.password">adminadmin</property>-->
-		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.password">adminadmin</property>
+		<!--<property name="hibernate.connection.password">root</property>-->
 
 		<!-- The JDBC URL to the database instance -->
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hi_student</property>
@@ -25,14 +25,14 @@
 		<property name="hibernate.current_session_context_class">thread</property>
 
 		<!-- Drop and re-create the database schema on startup-->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
 
 		<!-- Mapping class -->
 		<!--<mapping class="org.play.ground.atomic.data.Student"></mapping>-->
-		<mapping class="org.play.ground.atomic.data.Employee" />
-		<mapping class="org.play.ground.atomic.data.Publication" />
-		<mapping class="org.play.ground.atomic.data.Book" />
-		<mapping class="org.play.ground.atomic.data.BlogPost" />
+		<!--<mapping class="org.play.ground.atomic.data.Employee" />-->
+		<mapping class="org.play.ground.atomic.data.pub.Publication" />
+		<mapping class="org.play.ground.atomic.data.pub.Book" />
+		<mapping class="org.play.ground.atomic.data.pub.BlogPost" />
 
 	</session-factory>
 </hibernate-configuration>
