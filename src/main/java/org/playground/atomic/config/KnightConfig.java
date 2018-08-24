@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
  * Created by scruz on 10/08/18.
  */
 @Configuration
-@ComponentScan(basePackages = {"org.play.ground.atomic"})
+@ComponentScan(basePackages = {"org.playground.atomic"})
 public class KnightConfig {
 }

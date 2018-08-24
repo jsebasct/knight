@@ -3,7 +3,6 @@ package org.playground.atomic;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.play.ground.atomic.data.*;
 import org.playground.atomic.data.Employee;
 import org.playground.atomic.data.HibernateUtil;
 import org.playground.atomic.data.pub.BlogPost;
