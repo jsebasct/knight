@@ -6,6 +6,6 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ComponentScan(basePackages = {"org.playground.atomic.knight"})
-@ImportResource("/knight_beans.xml")
+@ImportResource("/knight/knight_beans.xml")
 public class MixedMasterConfig {
 }
