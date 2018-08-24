@@ -1,4 +1,4 @@
-package org.playground.atomic;
+package org.playground.atomic.knight;
 
 import org.springframework.stereotype.Component;
 

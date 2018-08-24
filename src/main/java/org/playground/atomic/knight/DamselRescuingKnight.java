@@ -1,4 +1,4 @@
-package org.playground.atomic;
+package org.playground.atomic.knight;
 
 import org.springframework.stereotype.Component;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * Created by scruz on 13/08/18.
  */
 @Component
-class DamselRescuingKnight implements Knight {
+public class DamselRescuingKnight implements Knight {
 
     private RescueDamselQuest quest;
 

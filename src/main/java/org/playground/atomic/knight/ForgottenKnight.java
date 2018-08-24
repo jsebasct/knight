@@ -1,7 +1,5 @@
 package org.playground.atomic.knight;
 
-import org.playground.atomic.Knight;
-
 public class ForgottenKnight implements Knight {
     @Override
     public void embarkOnQuest() {

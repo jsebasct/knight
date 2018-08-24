@@ -1,4 +1,4 @@
-package org.playground.atomic;
+package org.playground.atomic.knight;
 
 /**
  * Created by scruz on 06/08/18.
