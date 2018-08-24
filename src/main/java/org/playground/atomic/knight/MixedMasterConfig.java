@@ -1,12 +1,9 @@
-package org.playground.atomic.config;
+package org.playground.atomic.knight;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * Created by scruz on 10/08/18.
- */
 @Configuration
 @ComponentScan(basePackages = {"org.playground.atomic.knight"})
-public class KnightConfig {
+public class MixedMasterConfig {
 }
