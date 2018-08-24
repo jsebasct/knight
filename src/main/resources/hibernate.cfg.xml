@@ -28,11 +28,11 @@
 		<property name="hibernate.hbm2ddl.auto">create</property>
 
 		<!-- Mapping class -->
-		<!--<mapping class="org.play.ground.atomic.data.Student"></mapping>-->
-		<!--<mapping class="org.play.ground.atomic.data.Employee" />-->
-		<mapping class="org.play.ground.atomic.data.pub.Publication" />
-		<mapping class="org.play.ground.atomic.data.pub.Book" />
-		<mapping class="org.play.ground.atomic.data.pub.BlogPost" />
+		<!--<mapping class="Student"></mapping>-->
+		<!--<mapping class="Employee" />-->
+		<mapping class="org.playground.atomic.data.pub.Publication" />
+		<mapping class="org.playground.atomic.data.pub.Book" />
+		<mapping class="org.playground.atomic.data.pub.BlogPost" />
 
 	</session-factory>
 </hibernate-configuration>
