@@ -1,4 +1,4 @@
-package org.playground.atomic.sound;
+package org.playground.atomic.soundsystem;
 
 public interface CompactDisk {
     void play();

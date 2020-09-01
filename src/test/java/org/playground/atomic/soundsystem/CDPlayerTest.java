@@ -1,23 +1,23 @@
-package org.playground.atomic;
+package org.playground.atomic.soundsystem;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.playground.atomic.soundsystem.MediaPlayer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"/sound_system.xml"})
-public class ComplexXMLConfigTest {
+//@ContextConfiguration(locations = {"/sound_system.xml"})
+@ContextConfiguration(classes = CDConfig.class)
+public class CDPlayerTest {
 
     @Autowired
-    private MediaPlayer player;
+    private CompactDisk cd;
 
     @Test
     public void bothExist() {
-        Assert.assertNotNull(player);
+        Assert.assertNotNull(cd);
     }
 
 }

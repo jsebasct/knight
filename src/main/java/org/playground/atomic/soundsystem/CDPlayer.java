@@ -1,4 +1,4 @@
-package org.playground.atomic.sound;
+package org.playground.atomic.soundsystem;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
